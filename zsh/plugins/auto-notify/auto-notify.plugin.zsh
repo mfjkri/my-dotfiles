@@ -17,10 +17,12 @@ export AUTO_NOTIFY_VERSION="0.8.0"
         'tig'
         'watch'
         'git commit'
+	'git diff'
         'top'
         'htop'
         'ssh'
         'nano'
+	'python'
     )
 
 function _auto_notify_format() {
