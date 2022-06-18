@@ -1,4 +1,7 @@
 # Origin of files and folders:
 
-- [zsh](zsh) -> /usr/share/zsh
+- [vscode](vscode) -> ~/.config/Code/User
 - [.zshrc](.zshrc) -> ~/.zshrc
+
+- [zsh](zsh) -> /usr/share/zsh
+- [grub](grub) -> /etc/default/grub
