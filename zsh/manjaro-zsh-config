@@ -76,17 +76,26 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-R
 
 
+# ------------------------
 ## Plugins section: Enable fish style features
+
 # Use syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Use history substring search
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
 # Use make sudo
 source /usr/share/zsh/plugins/make-sudo/sudo.plugin.zsh
+
 # Use auto notify
 source /usr/share/zsh/plugins/auto-notify/auto-notify.plugin.zsh
+AUTO_NOTIFY_IGNORE+=("cat" "bat" "kate" "dolphin" "gwenview" "okular" "python")
+
 # Use you should use
 source /usr/share/zsh/plugins/you-should-use/you-should-use.plugin.zsh 
+
+# ------------------------
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
