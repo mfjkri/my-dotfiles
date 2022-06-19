@@ -90,7 +90,21 @@ source /usr/share/zsh/plugins/make-sudo/sudo.plugin.zsh
 
 # Use auto notify
 source /usr/share/zsh/plugins/auto-notify/auto-notify.plugin.zsh
-AUTO_NOTIFY_IGNORE+=("cat" "bat" "kate" "dolphin" "gwenview" "okular" "python")
+AUTO_NOTIFY_IGNORE+=(
+	"cat" 
+	"bat" 
+	"kate" 
+	"dolphin" 
+	"gwenview" 
+	"okular" 
+	"firefox"
+	"links"
+
+	"python"
+	"md"
+
+	"polymc -l"
+)
 
 # Use you should use
 source /usr/share/zsh/plugins/you-should-use/you-should-use.plugin.zsh 

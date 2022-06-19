@@ -11,6 +11,8 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+export PATH="/usr/lib/R/bin/:$PATH"
+
 # Aliases
 
 # Overriding with Rust commands
@@ -19,6 +21,9 @@ alias ls="exa -la"
 alias cat="bat"
 alias du="dust"
 alias grep="rg"
+alias clr="clear"
+
+alias md="mdless"
 
 # Location shorcuts
 alias pdrive="cd /media/Programming/"
