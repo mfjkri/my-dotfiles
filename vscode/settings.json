@@ -27,6 +27,7 @@
   "terminal.integrated.allowMnemonics": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.showExitAlert": false,
 
   "files.eol": "\n",
   "files.exclude": {

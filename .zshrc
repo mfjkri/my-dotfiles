@@ -51,8 +51,8 @@ alias mcat="polymc -l 1.17.1"
 alias sb="/media/Programming/repos/bash/sound-board/sound-board.bash"
 alias spy="source venv/bin/activate"
 
-
 # Autorun commands
 # neofetch
 
 eval "$(zoxide init zsh)"
+disable_auto_notify
