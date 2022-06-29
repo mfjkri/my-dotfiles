@@ -11,7 +11,7 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
-export PATH="/usr/lib/R/bin/:$PATH"
+export PATH="/home/johnny/.emacs.d/bin:$PATH"
 
 # Aliases
 
@@ -50,9 +50,19 @@ alias mcat="polymc -l 1.17.1"
 # Program Aliases
 alias sb="/media/Programming/repos/bash/sound-board/sound-board.bash"
 alias spy="source venv/bin/activate"
+alias dpy="deactivate"
+
+# Custom Functions
+
+scrcpy-wireless() {
+	adb tcpip 5555
+	adb connect 192.168.0.110:5555
+	scrcpy
+}
 
 # Autorun commands
 # neofetch
 
 eval "$(zoxide init zsh)"
 disable_auto_notify
+

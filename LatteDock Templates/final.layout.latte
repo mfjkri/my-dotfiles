@@ -51,7 +51,7 @@ PreloadWeight=0
 [Containments][1][Applets][67][Configuration][General]
 isInLatteDock=true
 isPreferredForDroppedLaunchers=false
-launchers59=applications:org.kde.dolphin.desktop,applications:org.manjaro.pamac.manager.desktop,applications:firefox.desktop,file:///latte-separator1.desktop,file:///latte-separator2.desktop,applications:org.kde.ksysguard.desktop,applications:org.kde.konsole.desktop,file:///latte-separator3.desktop,applications:bitwarden.desktop,applications:telegramdesktop.desktop,applications:whatsapp-for-linux_whatsapp-for-linux.desktop,applications:code_code.desktop
+launchers59=applications:org.kde.dolphin.desktop,applications:org.manjaro.pamac.manager.desktop,applications:firefox.desktop,file:///latte-separator1.desktop,file:///latte-separator2.desktop,applications:org.kde.ksysguard.desktop,applications:org.kde.konsole.desktop,file:///latte-separator3.desktop,applications:bitwarden.desktop,applications:telegramdesktop.desktop,applications:code_code.desktop
 manualScrollTasksType=Disabled
 
 [Containments][1][Applets][99]
@@ -59,7 +59,7 @@ immutability=1
 plugin=org.kde.plasma.kickerdash
 
 [Containments][1][Applets][99][Configuration]
-PreloadWeight=99
+PreloadWeight=72
 
 [Containments][1][Applets][99][Configuration][ConfigDialog]
 DialogHeight=682
@@ -449,24 +449,6 @@ PreloadWeight=0
 DialogHeight=660
 DialogWidth=880
 
-[Containments][7][Applets][122]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][7][Applets][122][Configuration]
-PreloadWeight=6
-
-[Containments][7][Applets][122][Configuration][Appearance]
-boldText=true
-dateFormat=longDate
-enabledCalendarPlugins=/usr/lib/qt/plugins/plasmacalendarplugins/holidaysevents.so
-showSeconds=true
-showWeekNumbers=true
-
-[Containments][7][Applets][122][Configuration][ConfigDialog]
-DialogHeight=660
-DialogWidth=880
-
 [Containments][7][Applets][124]
 immutability=1
 plugin=org.kde.latte.spacer
@@ -482,20 +464,38 @@ DialogWidth=880
 containmentType=Latte
 lengthPixels=5
 
-[Containments][7][Applets][125]
+[Containments][7][Applets][126]
 immutability=1
-plugin=org.kde.latte.spacer
+plugin=org.kde.plasma.eventcalendar
 
-[Containments][7][Applets][125][Configuration]
-PreloadWeight=0
+[Containments][7][Applets][126][Configuration]
+PreloadWeight=84
 
-[Containments][7][Applets][125][Configuration][ConfigDialog]
+[Containments][7][Applets][126][Configuration][ConfigDialog]
 DialogHeight=660
 DialogWidth=880
 
-[Containments][7][Applets][125][Configuration][General]
-containmentType=Latte
-lengthPixels=9
+[Containments][7][Applets][126][Configuration][General]
+clockLineBold1=true
+clockTimeFormat1=dddd, MMM d yyyy   h:mm AP
+clockTimeFormat2=Z
+v71Migration=true
+v72Migration=true
+
+[Containments][7][Applets][126][Configuration][Google Calendar]
+accessToken=ya29.a0ARrdaM92EHie2Kg6UoDm51Iutn7g6Cxdu_YOc1wetTFHpEIlSWO77Tma8YG_SviOn201ae7Kynkmg3XDMUdEPQXV5zsrBoDhhwFXTvNKbS6TXYtY5E_rl55DPDcCWjiV0AXKVht3SXvSz8XmQu5ajF7Gp0iZHw
+accessTokenExpiresAt=2907008150
+accessTokenType=Bearer
+calendarIdList=addressbook#contacts@group.v.calendar.google.com,en.singapore#holiday@group.v.calendar.google.com,muhammadfikri6844@gmail.com
+calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTYzOTk4NjQwMzgwNzAwMFwiIiwiaWQiOiJlbi5zaW5nYXBvcmUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiSG9saWRheXMgaW4gU2luZ2Fwb3JlIiwiZGVzY3JpcHRpb24iOiJIb2xpZGF5cyBhbmQgT2JzZXJ2YW5jZXMgaW4gU2luZ2Fwb3JlIiwidGltZVpvbmUiOiJBc2lhL1NpbmdhcG9yZSIsImNvbG9ySWQiOiI4IiwiYmFja2dyb3VuZENvbG9yIjoiIzE2YTc2NSIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE2NDEwOTc2NDE1MjMwMDBcIiIsImlkIjoiYWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6IkJpcnRoZGF5cyIsImRlc2NyaXB0aW9uIjoiRGlzcGxheXMgYmlydGhkYXlzLCBhbm5pdmVyc2FyaWVzLCBhbmQgb3RoZXIgZXZlbnQgZGF0ZXMgb2YgcGVvcGxlIGluIEdvb2dsZSBDb250YWN0cy4iLCJ0aW1lWm9uZSI6IkFzaWEvU2luZ2Fwb3JlIiwic3VtbWFyeU92ZXJyaWRlIjoiQmlydGhkYXlzIiwiY29sb3JJZCI6IjEzIiwiYmFja2dyb3VuZENvbG9yIjoiIzkyZTFjMCIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE2NDEwOTc2NDQ3NzUwMDBcIiIsImlkIjoibXVoYW1tYWRmaWtyaTY4NDRAZ21haWwuY29tIiwic3VtbWFyeSI6Im11aGFtbWFkZmlrcmk2ODQ0QGdtYWlsLmNvbSIsInRpbWVab25lIjoiQXNpYS9TaW5nYXBvcmUiLCJjb2xvcklkIjoiMTQiLCJiYWNrZ3JvdW5kQ29sb3IiOiIjOWZlMWU3IiwiZm9yZWdyb3VuZENvbG9yIjoiIzAwMDAwMCIsInNlbGVjdGVkIjp0cnVlLCJhY2Nlc3NSb2xlIjoib3duZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbeyJtZXRob2QiOiJwb3B1cCIsIm1pbnV0ZXMiOjMwfV0sIm5vdGlmaWNhdGlvblNldHRpbmdzIjp7Im5vdGlmaWNhdGlvbnMiOlt7InR5cGUiOiJldmVudENyZWF0aW9uIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudENoYW5nZSIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRDYW5jZWxsYXRpb24iLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50UmVzcG9uc2UiLCJtZXRob2QiOiJlbWFpbCJ9XX0sInByaW1hcnkiOnRydWUsImNvbmZlcmVuY2VQcm9wZXJ0aWVzIjp7ImFsbG93ZWRDb25mZXJlbmNlU29sdXRpb25UeXBlcyI6WyJoYW5nb3V0c01lZXQiXX19XQ==
+refreshToken=1//0gw6ehftxaEEGCgYIARAAGBASNwF-L9IrFXk8mY5c5NiQSLvL7zzjchpHeVB4HCG9FdZe6oOg0VawAIYHiqGUxL_QNJY4n2toxhE
+sessionClientId=391436299960-k0s16nm589meovhoblpcquqgbbrena17.apps.googleusercontent.com
+sessionClientSecret=Gdr_7lKIQuGBD4Up3MOiw-7i
+tasklistIdList=MTgyMTI2MjAzMzQyMjE0NDg5ODg6MDow
+tasklistList=W3sia2luZCI6InRhc2tzI3Rhc2tMaXN0IiwiaWQiOiJNVGd5TVRJMk1qQXpNelF5TWpFME5EZzVPRGc2TURvdyIsImV0YWciOiJcIkxURXpNalExTlRZeE1UUVwiIiwidGl0bGUiOiJNeSBUYXNrcyIsInVwZGF0ZWQiOiIyMDIyLTAxLTMxVDE2OjUxOjU4LjU3N1oiLCJzZWxmTGluayI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL3Rhc2tzL3YxL3VzZXJzL0BtZS9saXN0cy9NVGd5TVRJMk1qQXpNelF5TWpFME5EZzVPRGc2TURvdyJ9XQ==
+
+[Containments][7][Applets][126][Configuration][Weather]
+openWeatherMapCityId=1880251
 
 [Containments][7][Applets][20]
 immutability=1
@@ -536,7 +536,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][22][Configuration]
-PreloadWeight=0
+PreloadWeight=32
 
 [Containments][7][Applets][23]
 immutability=1
@@ -559,7 +559,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][7][Applets][24][Configuration]
-PreloadWeight=28
+PreloadWeight=36
 
 [Containments][7][Applets][24][Configuration][ConfigDialog]
 DialogHeight=1388
@@ -574,7 +574,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][7][Applets][25][Configuration]
-PreloadWeight=78
+PreloadWeight=0
 SystrayContainmentId=26
 
 [Containments][7][Applets][86]
@@ -610,7 +610,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][7][Applets][93][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][7][Applets][93][Configuration][ConfigDialog]
 DialogHeight=1378
@@ -632,7 +632,7 @@ PreloadWeight=0
 [Containments][7][General]
 alignment=10
 alignmentUpgraded=true
-appletOrder=119;121;25;93;24;22;124;122;125
+appletOrder=119;121;93;24;22;25;126;124
 autoSizeEnabled=false
 configurationSticker=true
 dragActiveWindowEnabled=true
