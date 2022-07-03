@@ -1,9 +1,11 @@
 {
-  "window.zoomLevel": -1,
-
   "workbench.colorTheme": "One Monokai",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.obj": "3dviewer.viewer",
+    "*.md": "default"
+  },
 
   "editor.fontFamily": "'Noto Sans Mono', 'monospace', monospace",
   "editor.fontSize": 18,
@@ -74,6 +76,13 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-18",
+      "path": "/usr/lib/jvm/java-18-openjdk",
+      "default": true
+    }
+  ],
   /* -------------------------------------------------------------------------- */
 
   /* -------------------------------------------------------------------------- */
@@ -131,15 +140,5 @@
       "italic": false
     }
   ],
-  "workbench.editorAssociations": {
-    "*.obj": "3dviewer.viewer"
-  },
-  "vsintellicode.modelDownloadPath": "/home/johnny/.config/Code/IntellicodeModel",
-  "java.configuration.runtimes": [
-    {
-      "name": "JavaSE-18",
-      "path": "/usr/lib/jvm/java-18-openjdk",
-      "default": true
-    }
-  ]
+  "window.zoomLevel": -1
 }

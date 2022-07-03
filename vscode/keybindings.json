@@ -416,5 +416,33 @@
     "key": "ctrl+k ctrl+=",
     "command": "-editor.unfoldAllExcept",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+meta+o",
+    "command": "explorer.openWith"
+  },
+  {
+    "key": "ctrl+shift+meta+w",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+w",
+    "command": "-workbench.action.closeAllGroups"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
   }
 ]
