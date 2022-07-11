@@ -1,4 +1,6 @@
 {
+  "window.zoomLevel": -1,
+
   "workbench.colorTheme": "One Monokai",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
@@ -10,7 +12,6 @@
   "editor.fontFamily": "'Noto Sans Mono', 'monospace', monospace",
   "editor.fontSize": 18,
   "editor.fontLigatures": true,
-  "editor.minimap.enabled": false,
   "editor.cursorStyle": "block",
   "editor.cursorBlinking": "smooth",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -140,5 +141,7 @@
       "italic": false
     }
   ],
-  "window.zoomLevel": -1
+
+  // Extension : Git
+  "git.autofetch": true
 }
